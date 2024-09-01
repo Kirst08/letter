@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+    <title>Solicitud de Amistad</title>
+    <link rel="icon" href="icons/tab-icon.png"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="font-family: 'Comic Neue';" class="relative">
+    <!-- BACKGROUND -->
+     <!-- Iframe del video de YouTube para reproducir solo música -->
+<iframe id="background-music" src="https://www.youtube.com/embed/OYINaRnIJJ4?autoplay=1&loop=1&playlist=OYINaRnIJJ4&controls=0&showinfo=0&autohide=1&mute=0" frameborder="0" allow="autoplay" style="width:0;height:0;border:0; visibility:hidden;"></iframe>
+<div class="background">
+        <div class="one">
+            <div class="container">
+                <div class="envelope-wrapper">
+                    <div class="envelope">
+                        <div class="letter">
+                            <div class="text">
+                                <strong style="font-size: .89rem;">Hola Fernanda,</strong>
+                                <p style="text-indent: 15px;">
+                                    Te escribo porque he estado pensando en lo genial que sería si pudiéramos ser amiwitas. Me encantaría invitarte a subir cerros, mandarte reels y tener una racha de tiktok. ¿Qué dices, te animas a ser mi amiwita?
+                                </p>
+                                <p class="love">Att: Kirsten</p>
+                                <div class="pana">
+                                    <img src="icons/dogos.jfif" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+            envelope.classList.toggle('open');
+        });
+    </script>
+    
+    <script src="app.js"></script> 
+</body>
+</html>
+
